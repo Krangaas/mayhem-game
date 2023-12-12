@@ -1,0 +1,148 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head><title>Python: module sl_thrust</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head><body bgcolor="#f0f0f8">
+
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="heading">
+<tr bgcolor="#7799ee">
+<td valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial">&nbsp;<br><big><big><strong>sl_thrust</strong></big></big></font></td
+><td align=right valign=bottom
+><font color="#ffffff" face="helvetica, arial"><a href=".">index</a><br><a href="file:c%3A%5Cscrypts%5Cinf1400%5Cassignment3%5Cinf1400-mka080-3%5Csrc%5Csl_thrust.py">c:\scrypts\inf1400\assignment3\inf1400-mka080-3\src\sl_thrust.py</a></font></td></tr></table>
+    <p><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;##&nbsp;&nbsp;Assignment&nbsp;3&nbsp;&nbsp;##<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;##&nbsp;INF-1400&nbsp;##<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;##&nbsp;&nbsp;Magus&nbsp;Kanck&nbsp;##<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;##&nbsp;&nbsp;mka080&nbsp;&nbsp;##<br>
+&nbsp;<br>
+<a href="#Thrust">Thrust</a>&nbsp;object&nbsp;for&nbsp;the&nbsp;game&nbsp;"Spacelancer".</tt></p>
+<p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ee77aa">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Classes</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#ee77aa"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><dl>
+<dt><font face="helvetica, arial"><a href="sl_moveable_object.html#MoveableObject">sl_moveable_object.MoveableObject</a>(<a href="sl_base_object.html#BaseObject">sl_base_object.BaseObject</a>)
+</font></dt><dd>
+<dl>
+<dt><font face="helvetica, arial"><a href="sl_thrust.html#Thrust">Thrust</a>
+</font></dt></dl>
+</dd>
+</dl>
+ <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="Thrust">class <strong>Thrust</strong></a>(<a href="sl_moveable_object.html#MoveableObject">sl_moveable_object.MoveableObject</a>)</font></td></tr>
+    
+<tr bgcolor="#ffc8d8"><td rowspan=2><tt>&nbsp;&nbsp;&nbsp;</tt></td>
+<td colspan=2><tt><a href="#Thrust">Thrust</a>&nbsp;object&nbsp;representation,&nbsp;derived&nbsp;from&nbsp;<a href="sl_moveable_object.html#MoveableObject">MoveableObject</a>.<br>
+----------<br>
+Parameters<br>
+&nbsp;&nbsp;&nbsp;&nbsp;image:&nbsp;str<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;supports&nbsp;the&nbsp;following&nbsp;formats:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;JPG,&nbsp;PNG,&nbsp;GIF&nbsp;(non-animated),&nbsp;BMP,&nbsp;PCX,&nbsp;TGA&nbsp;(uncompressed),&nbsp;TIF,&nbsp;LBM,&nbsp;BPM,&nbsp;PGM,&nbsp;PPM,&nbsp;XPM<br>
+&nbsp;&nbsp;&nbsp;&nbsp;position:&nbsp;2&nbsp;dim&nbsp;tuple&nbsp;(int,int)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The&nbsp;position&nbsp;of&nbsp;the&nbsp;object&nbsp;on&nbsp;the&nbsp;screen.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;angle:&nbsp;int<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The&nbsp;orientation&nbsp;of&nbsp;the&nbsp;object.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;player:&nbsp;int<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The&nbsp;affiliation&nbsp;of&nbsp;the&nbsp;object,&nbsp;must&nbsp;be&nbsp;either&nbsp;1&nbsp;or&nbsp;2.<br>&nbsp;</tt></td></tr>
+<tr><td>&nbsp;</td>
+<td width="100%"><dl><dt>Method resolution order:</dt>
+<dd><a href="sl_thrust.html#Thrust">Thrust</a></dd>
+<dd><a href="sl_moveable_object.html#MoveableObject">sl_moveable_object.MoveableObject</a></dd>
+<dd><a href="sl_base_object.html#BaseObject">sl_base_object.BaseObject</a></dd>
+<dd><a href="pygame.sprite.html#Sprite">pygame.sprite.Sprite</a></dd>
+<dd><a href="builtins.html#object">builtins.object</a></dd>
+</dl>
+<hr>
+Methods defined here:<br>
+<dl><dt><a name="Thrust-__init__"><strong>__init__</strong></a>(self, image, position, angle, player)</dt><dd><tt>Create&nbsp;a&nbsp;thrust&nbsp;image&nbsp;object.</tt></dd></dl>
+
+<dl><dt><a name="Thrust-update"><strong>update</strong></a>(self)</dt><dd><tt>Update&nbsp;<a href="#Thrust">Thrust</a>&nbsp;behaviour.</tt></dd></dl>
+
+<hr>
+Methods inherited from <a href="sl_moveable_object.html#MoveableObject">sl_moveable_object.MoveableObject</a>:<br>
+<dl><dt><a name="Thrust-limit_speed"><strong>limit_speed</strong></a>(self, limit)</dt><dd><tt>Apply&nbsp;a&nbsp;limiting&nbsp;method&nbsp;to&nbsp;speed&nbsp;of&nbsp;object.<br>
+limit:&nbsp;positive&nbsp;int.</tt></dd></dl>
+
+<dl><dt><a name="Thrust-movement"><strong>movement</strong></a>(self, limit, gravity=False)</dt><dd><tt>Move&nbsp;the&nbsp;object&nbsp;image&nbsp;and&nbsp;its&nbsp;rect.<br>
+----------<br>
+Parameters<br>
+&nbsp;&nbsp;&nbsp;&nbsp;gravity:&nbsp;bool&nbsp;(optional)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Turn&nbsp;gravity&nbsp;on&nbsp;or&nbsp;off&nbsp;for&nbsp;object.&nbsp;Default&nbsp;is&nbsp;False.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;limit:&nbsp;int<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Speed&nbsp;limit&nbsp;of&nbsp;object.</tt></dd></dl>
+
+<dl><dt><a name="Thrust-screen_wrap"><strong>screen_wrap</strong></a>(self)</dt><dd><tt>Apply&nbsp;screen&nbsp;wrapping&nbsp;rules&nbsp;to&nbsp;object.</tt></dd></dl>
+
+<hr>
+Methods inherited from <a href="sl_base_object.html#BaseObject">sl_base_object.BaseObject</a>:<br>
+<dl><dt><a name="Thrust-rotate"><strong>rotate</strong></a>(self, theta)</dt><dd><tt>Rotate&nbsp;the&nbsp;object&nbsp;image&nbsp;and&nbsp;its&nbsp;rect.<br>
+----------<br>
+Parameters<br>
+&nbsp;&nbsp;&nbsp;&nbsp;theta:&nbsp;int<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Amount&nbsp;in&nbsp;degrees&nbsp;that&nbsp;the&nbsp;object&nbsp;will&nbsp;rotate.</tt></dd></dl>
+
+<hr>
+Methods inherited from <a href="pygame.sprite.html#Sprite">pygame.sprite.Sprite</a>:<br>
+<dl><dt><a name="Thrust-__repr__"><strong>__repr__</strong></a>(self)</dt><dd><tt>Return&nbsp;repr(self).</tt></dd></dl>
+
+<dl><dt><a name="Thrust-add"><strong>add</strong></a>(self, *groups)</dt><dd><tt>add&nbsp;the&nbsp;sprite&nbsp;to&nbsp;groups<br>
+&nbsp;<br>
+Sprite.<a href="#Thrust-add">add</a>(*groups):&nbsp;return&nbsp;None<br>
+&nbsp;<br>
+Any&nbsp;number&nbsp;of&nbsp;Group&nbsp;instances&nbsp;can&nbsp;be&nbsp;passed&nbsp;as&nbsp;arguments.&nbsp;The<br>
+Sprite&nbsp;will&nbsp;be&nbsp;added&nbsp;to&nbsp;the&nbsp;Groups&nbsp;it&nbsp;is&nbsp;not&nbsp;already&nbsp;a&nbsp;member&nbsp;of.</tt></dd></dl>
+
+<dl><dt><a name="Thrust-add_internal"><strong>add_internal</strong></a>(self, group)</dt></dl>
+
+<dl><dt><a name="Thrust-alive"><strong>alive</strong></a>(self)</dt><dd><tt>does&nbsp;the&nbsp;sprite&nbsp;belong&nbsp;to&nbsp;any&nbsp;groups<br>
+&nbsp;<br>
+Sprite.<a href="#Thrust-alive">alive</a>():&nbsp;return&nbsp;bool<br>
+&nbsp;<br>
+Returns&nbsp;True&nbsp;when&nbsp;the&nbsp;Sprite&nbsp;belongs&nbsp;to&nbsp;one&nbsp;or&nbsp;more&nbsp;Groups.</tt></dd></dl>
+
+<dl><dt><a name="Thrust-groups"><strong>groups</strong></a>(self)</dt><dd><tt>list&nbsp;of&nbsp;Groups&nbsp;that&nbsp;contain&nbsp;this&nbsp;Sprite<br>
+&nbsp;<br>
+Sprite.<a href="#Thrust-groups">groups</a>():&nbsp;return&nbsp;group_list<br>
+&nbsp;<br>
+Returns&nbsp;a&nbsp;list&nbsp;of&nbsp;all&nbsp;the&nbsp;Groups&nbsp;that&nbsp;contain&nbsp;this&nbsp;Sprite.</tt></dd></dl>
+
+<dl><dt><a name="Thrust-kill"><strong>kill</strong></a>(self)</dt><dd><tt>remove&nbsp;the&nbsp;Sprite&nbsp;from&nbsp;all&nbsp;Groups<br>
+&nbsp;<br>
+Sprite.<a href="#Thrust-kill">kill</a>():&nbsp;return&nbsp;None<br>
+&nbsp;<br>
+The&nbsp;Sprite&nbsp;is&nbsp;removed&nbsp;from&nbsp;all&nbsp;the&nbsp;Groups&nbsp;that&nbsp;contain&nbsp;it.&nbsp;This&nbsp;won't<br>
+change&nbsp;anything&nbsp;about&nbsp;the&nbsp;state&nbsp;of&nbsp;the&nbsp;Sprite.&nbsp;It&nbsp;is&nbsp;possible&nbsp;to<br>
+continue&nbsp;to&nbsp;use&nbsp;the&nbsp;Sprite&nbsp;after&nbsp;this&nbsp;method&nbsp;has&nbsp;been&nbsp;called,&nbsp;including<br>
+adding&nbsp;it&nbsp;to&nbsp;Groups.</tt></dd></dl>
+
+<dl><dt><a name="Thrust-remove"><strong>remove</strong></a>(self, *groups)</dt><dd><tt>remove&nbsp;the&nbsp;sprite&nbsp;from&nbsp;groups<br>
+&nbsp;<br>
+Sprite.<a href="#Thrust-remove">remove</a>(*groups):&nbsp;return&nbsp;None<br>
+&nbsp;<br>
+Any&nbsp;number&nbsp;of&nbsp;Group&nbsp;instances&nbsp;can&nbsp;be&nbsp;passed&nbsp;as&nbsp;arguments.&nbsp;The&nbsp;Sprite<br>
+will&nbsp;be&nbsp;removed&nbsp;from&nbsp;the&nbsp;Groups&nbsp;it&nbsp;is&nbsp;currently&nbsp;a&nbsp;member&nbsp;of.</tt></dd></dl>
+
+<dl><dt><a name="Thrust-remove_internal"><strong>remove_internal</strong></a>(self, group)</dt></dl>
+
+<hr>
+Data descriptors inherited from <a href="pygame.sprite.html#Sprite">pygame.sprite.Sprite</a>:<br>
+<dl><dt><strong>__dict__</strong></dt>
+<dd><tt>dictionary&nbsp;for&nbsp;instance&nbsp;variables&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><tt>list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+</td></tr></table></td></tr></table><p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#55aa55">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Data</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#55aa55"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><strong>SHIP_INFO</strong> = {'acceleration_factor': 0.2, 'attack_timer': 60, 'energy': 500, 'energy_burn_factor': 0.25, 'gravity': True, 'health': 100, 'rotation_factor': 5, 'speed_limit': 5}</td></tr></table>
+</body></html>

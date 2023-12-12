@@ -1,0 +1,144 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head><title>Python: module spacelancer</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head><body bgcolor="#f0f0f8">
+
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="heading">
+<tr bgcolor="#7799ee">
+<td valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial">&nbsp;<br><big><big><strong>spacelancer</strong></big></big></font></td
+><td align=right valign=bottom
+><font color="#ffffff" face="helvetica, arial"><a href=".">index</a><br><a href="file:c%3A%5Cscrypts%5Cinf1400%5Cassignment3%5Cinf1400-mka080-3%5Csrc%5Cspacelancer.py">c:\scrypts\inf1400\assignment3\inf1400-mka080-3\src\spacelancer.py</a></font></td></tr></table>
+    <p><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;##&nbsp;&nbsp;Assignment&nbsp;3&nbsp;&nbsp;##<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;##&nbsp;INF-1400&nbsp;##<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;##&nbsp;&nbsp;Magus&nbsp;Kanck&nbsp;##<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;##&nbsp;&nbsp;mka080&nbsp;&nbsp;##<br>
+&nbsp;<br>
+Game&nbsp;engine&nbsp;for&nbsp;the&nbsp;game&nbsp;Spacelancer.&nbsp;Run&nbsp;this&nbsp;module&nbsp;to&nbsp;play&nbsp;the&nbsp;game.</tt></p>
+<p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#aa55cc">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Modules</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#aa55cc"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><table width="100%" summary="list"><tr><td width="25%" valign=top><a href="pygame.html">pygame</a><br>
+</td><td width="25%" valign=top><a href="random.html">random</a><br>
+</td><td width="25%" valign=top><a href="time.html">time</a><br>
+</td><td width="25%" valign=top></td></tr></table></td></tr></table><p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ee77aa">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Classes</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#ee77aa"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><dl>
+<dt><font face="helvetica, arial"><a href="builtins.html#object">builtins.object</a>
+</font></dt><dd>
+<dl>
+<dt><font face="helvetica, arial"><a href="spacelancer.html#Engine">Engine</a>
+</font></dt></dl>
+</dd>
+</dl>
+ <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="Engine">class <strong>Engine</strong></a>(<a href="builtins.html#object">builtins.object</a>)</font></td></tr>
+    
+<tr bgcolor="#ffc8d8"><td rowspan=2><tt>&nbsp;&nbsp;&nbsp;</tt></td>
+<td colspan=2><tt>Spacelancer&nbsp;engine.<br>&nbsp;</tt></td></tr>
+<tr><td>&nbsp;</td>
+<td width="100%">Methods defined here:<br>
+<dl><dt><a name="Engine-__init__"><strong>__init__</strong></a>(self)</dt><dd><tt>Initialize&nbsp;pygame,&nbsp;display&nbsp;and&nbsp;sprite&nbsp;Groups.&nbsp;Create&nbsp;title&nbsp;<a href="builtins.html#object">object</a>&nbsp;and&nbsp;ground&nbsp;<a href="builtins.html#object">object</a>.</tt></dd></dl>
+
+<dl><dt><a name="Engine-despawn_objects"><strong>despawn_objects</strong></a>(self, sprite)</dt><dd><tt>Destroy&nbsp;in-game&nbsp;objects.<br>
+----------<br>
+Parameters<br>
+&nbsp;&nbsp;&nbsp;&nbsp;sprite:&nbsp;class<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Derived&nbsp;from&nbsp;pygame.Sprite</tt></dd></dl>
+
+<dl><dt><a name="Engine-give_score"><strong>give_score</strong></a>(self, hit_player, score_increment)</dt><dd><tt>Increment&nbsp;the&nbsp;score&nbsp;attribute&nbsp;of&nbsp;the&nbsp;player&nbsp;that&nbsp;made&nbsp;a&nbsp;successful&nbsp;attack.<br>
+----------<br>
+Parameters<br>
+&nbsp;&nbsp;&nbsp;&nbsp;hit_player:&nbsp;int<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The&nbsp;affiliation&nbsp;of&nbsp;the&nbsp;player&nbsp;that&nbsp;got&nbsp;hit.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;score_increment:&nbsp;int<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The&nbsp;amount&nbsp;the&nbsp;score&nbsp;should&nbsp;be&nbsp;iIncremented.</tt></dd></dl>
+
+<dl><dt><a name="Engine-lance_logic"><strong>lance_logic</strong></a>(self, lance)</dt><dd><tt>Handle&nbsp;lance&nbsp;<a href="builtins.html#object">object</a>&nbsp;logic&nbsp;such&nbsp;as&nbsp;colliding&nbsp;with&nbsp;static&nbsp;objects.<br>
+----------<br>
+Parameters<br>
+&nbsp;&nbsp;&nbsp;&nbsp;lance:&nbsp;class<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Must&nbsp;be&nbsp;a&nbsp;Lance&nbsp;<a href="builtins.html#object">object</a></tt></dd></dl>
+
+<dl><dt><a name="Engine-main_screen"><strong>main_screen</strong></a>(self)</dt><dd><tt>Intro&nbsp;screen,&nbsp;displays&nbsp;control&nbsp;scheme.</tt></dd></dl>
+
+<dl><dt><a name="Engine-object_collision"><strong>object_collision</strong></a>(self, sprite, other)</dt><dd><tt>Handle&nbsp;collisions&nbsp;between&nbsp;objects.<br>
+----------<br>
+Parameters<br>
+&nbsp;&nbsp;&nbsp;&nbsp;sprite:&nbsp;class<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Must&nbsp;be&nbsp;a&nbsp;Sprite&nbsp;<a href="builtins.html#object">object</a>&nbsp;or&nbsp;derived&nbsp;from&nbsp;pygame&nbsp;Sprite&nbsp;class<br>
+&nbsp;&nbsp;&nbsp;&nbsp;other:&nbsp;class<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Must&nbsp;be&nbsp;a&nbsp;Sprite&nbsp;<a href="builtins.html#object">object</a>&nbsp;or&nbsp;derived&nbsp;from&nbsp;pygame&nbsp;Sprite&nbsp;class</tt></dd></dl>
+
+<dl><dt><a name="Engine-play"><strong>play</strong></a>(self)</dt><dd><tt>Starts&nbsp;the&nbsp;game&nbsp;loop.</tt></dd></dl>
+
+<dl><dt><a name="Engine-scoreboard"><strong>scoreboard</strong></a>(self)</dt><dd><tt>Update&nbsp;scoreboard&nbsp;on&nbsp;screen.</tt></dd></dl>
+
+<dl><dt><a name="Engine-ship_logic"><strong>ship_logic</strong></a>(self, ship)</dt><dd><tt>Handle&nbsp;ship&nbsp;logic&nbsp;such&nbsp;as&nbsp;collisions&nbsp;between&nbsp;ships&nbsp;and&nbsp;game&nbsp;objects,&nbsp;refueling,&nbsp;etc.<br>
+----------<br>
+Parameters<br>
+&nbsp;&nbsp;&nbsp;&nbsp;ship:&nbsp;class<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Must&nbsp;be&nbsp;a&nbsp;Ship&nbsp;<a href="builtins.html#object">object</a></tt></dd></dl>
+
+<dl><dt><a name="Engine-spawn_explosion"><strong>spawn_explosion</strong></a>(self, pos)</dt><dd><tt>Create&nbsp;three&nbsp;explosion&nbsp;objects&nbsp;on&nbsp;the&nbsp;screen.<br>
+----------<br>
+Parameters<br>
+&nbsp;&nbsp;&nbsp;&nbsp;pos:&nbsp;2&nbsp;dim&nbsp;tuple&nbsp;(int,int)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Position&nbsp;on&nbsp;the&nbsp;screen&nbsp;where&nbsp;the&nbsp;<a href="builtins.html#object">object</a>&nbsp;should&nbsp;spawn.</tt></dd></dl>
+
+<dl><dt><a name="Engine-spawn_platform"><strong>spawn_platform</strong></a>(self, pinfo)</dt><dd><tt>Create&nbsp;a&nbsp;platform&nbsp;<a href="builtins.html#object">object</a>&nbsp;on&nbsp;the&nbsp;screen.<br>
+----------<br>
+Parameters<br>
+&nbsp;&nbsp;&nbsp;&nbsp;pinfo:&nbsp;dict<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Dictionary&nbsp;containing&nbsp;player&nbsp;info,&nbsp;controls,&nbsp;health,&nbsp;etc.</tt></dd></dl>
+
+<dl><dt><a name="Engine-spawn_ship"><strong>spawn_ship</strong></a>(self, pinfo, score=0)</dt><dd><tt>Create&nbsp;a&nbsp;ship&nbsp;<a href="builtins.html#object">object</a>&nbsp;on&nbsp;the&nbsp;screen.<br>
+----------<br>
+Parameters<br>
+&nbsp;&nbsp;&nbsp;&nbsp;pinfo:&nbsp;dict<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Dictionary&nbsp;containing&nbsp;player&nbsp;info,&nbsp;controls,&nbsp;health,&nbsp;etc.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;score:&nbsp;int&nbsp;(optional)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Score&nbsp;accumulated&nbsp;by&nbsp;the&nbsp;player.</tt></dd></dl>
+
+<hr>
+Data descriptors defined here:<br>
+<dl><dt><strong>__dict__</strong></dt>
+<dd><tt>dictionary&nbsp;for&nbsp;instance&nbsp;variables&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><tt>list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+</td></tr></table></td></tr></table><p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#55aa55">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Data</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#55aa55"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><strong>BLACK</strong> = (0, 0, 0)<br>
+<strong>FPS</strong> = 60<br>
+<strong>GRAVITY_FACTOR</strong> = 0.02<br>
+<strong>LANCE_INFO</strong> = {'acceleration_factor': 0.25, 'energy': 100, 'gravity': True, 'speed_limit': 15}<br>
+<strong>LARGE_FONT</strong> = &lt;pygame.font.Font object&gt;<br>
+<strong>MEDIUM_FONT</strong> = &lt;pygame.font.Font object&gt;<br>
+<strong>P1_INFO</strong> = {'base': 'P1_platform.png', 'controls': {'Brake': 115, 'Lance': 49, 'Left': 97, 'Right': 100, 'Sword': 50, 'Thrust': 119}, 'energy': 500, 'health': 100, 'image': 'P1.png', 'player': 1, 'pos': (200, 700)}<br>
+<strong>P2_INFO</strong> = {'base': 'P2_platform.png', 'controls': {'Brake': 274, 'Lance': 109, 'Left': 276, 'Right': 275, 'Sword': 110, 'Thrust': 273}, 'energy': 500, 'health': 100, 'image': 'P2.png', 'player': 2, 'pos': (1000, 700)}<br>
+<strong>SCREEN_HEIGHT</strong> = 900<br>
+<strong>SCREEN_SIZE</strong> = (1200, 900)<br>
+<strong>SCREEN_WIDTH</strong> = 1200<br>
+<strong>SHIP_INFO</strong> = {'acceleration_factor': 0.2, 'attack_timer': 60, 'energy': 500, 'energy_burn_factor': 0.25, 'gravity': True, 'health': 100, 'rotation_factor': 5, 'speed_limit': 5}<br>
+<strong>SMALL_FONT</strong> = &lt;pygame.font.Font object&gt;<br>
+<strong>WHITE</strong> = (255, 255, 255)</td></tr></table>
+</body></html>
